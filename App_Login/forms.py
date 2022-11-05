@@ -14,3 +14,9 @@ class UserProfileChange(UserChangeForm):
     class Meta:
         model = User
         fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ('profile_pic',)
